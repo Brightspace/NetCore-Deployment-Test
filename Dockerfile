@@ -4,7 +4,7 @@ RUN mkdir -p /usr/app/src/web
 WORKDIR /usr/app/src/web
 ADD . ..
 
-RUN dotnet build && npm install
+RUN dotnet restore && npm install && dotnet build
 
 ENTRYPOINT [ "dotnet" ]
 CMD [ "run" ]
