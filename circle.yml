@@ -10,7 +10,7 @@ deployment:
   dev:
     branch: master
     commands:
-      - $(aws ecr get-login --no-include-email --region us-east-1)
+      - $(aws ecr get-login --region us-east-1)
       - docker tag bspace/netcore-demo:latest 079624728583.dkr.ecr.us-east-1.amazonaws.com/bspace/netcore-demo:latest
       - docker push 079624728583.dkr.ecr.us-east-1.amazonaws.com/bspace/netcore-demo:latest
       - aws codepipeline start-pipeline-execution NetCoreDemo
