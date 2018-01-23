@@ -1,0 +1,7 @@
+{
+	"KeyName": "DemoKeyPair",
+	"VpcId": "vpc-041c087c",
+	"SubnetId": "subnet-d3d1b28e",
+	"MaxSize": "4",
+	"InstanceType": "t2.micro"
+}
