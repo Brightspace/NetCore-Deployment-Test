@@ -13,4 +13,4 @@ deployment:
       - $(aws ecr get-login --region us-east-1)
       - docker tag bspace/netcore-demo:latest 079624728583.dkr.ecr.us-east-1.amazonaws.com/bspace/netcore-demo:latest
       - docker push 079624728583.dkr.ecr.us-east-1.amazonaws.com/bspace/netcore-demo:latest
-      - aws codepipeline start-pipeline-execution --name NetCoreDemo
+      - aws codepipeline start-pipeline-execution --name NetCoreDemo --region us-east-1
