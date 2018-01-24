@@ -1,22 +1,18 @@
-[
-	{
-		"ParameterKey": "KeyName",
-		"ParameterValue": "DemoKeyPair"
+{
+	"Parameters" : {
+		"KeyName": "DemoKeyPair",
+		"SubnetId": "subnet-d3d1b28e",
+		"VpcId": "vpc-041c087c",
+		"InstanceType": "t2.micro"
 	},
-	{
-		"ParameterKey": "VpcId",
-		"ParameterValue": "vpc-041c087c"
-	},
-	{
-		"ParameterKey": "SubnetId",
-		"ParameterValue": "subnet-d3d1b28e"
-	},
-	{
-		"ParameterKey": "MaxSize",
-		"ParameterValue": "4"
-	},
-	{
-		"ParameterKey": "InstanceType",
-		"ParameterValue": "t2.micro"
+	"StackPolicy" : {
+		"Statement" : [
+		{
+			"Effect" : "Allow",
+			"NotAction" : "Update:Delete",
+			"Principal": "*",
+			"Resource" : "*"
+		}
+		]
 	}
-]
+	}
