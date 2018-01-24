@@ -6,6 +6,10 @@ compile:
   override:
     - docker build -t bspace/netcore-demo .
 
+test:
+  override:
+    - docker run -d -p 5000:5000 bspace/netcore-demo
+
 deployment:
   dev:
     branch: master
