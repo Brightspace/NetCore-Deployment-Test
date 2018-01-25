@@ -396,7 +396,6 @@
 					"Ref":"ECSCluster"
 				  },
 				  " >> /etc/ecs/ecs.config\n",
-				  "yum install -y aws-cfn-bootstrap\n",
 				  "/opt/aws/bin/cfn-signal -e $? ",
 				  "         --stack ",
 				  {
