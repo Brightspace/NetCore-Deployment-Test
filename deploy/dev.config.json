@@ -1,7 +1,7 @@
 {
 	"Parameters" : {
 		"KeyName": "DemoKeyPair",
-		"SubnetId": "subnet-d3d1b28e",
+		"SubnetId": "subnet-d3d1b28e,subnet-ae7545e5",
 		"VpcId": "vpc-041c087c",
 		"InstanceType": "t2.micro"
 	},
