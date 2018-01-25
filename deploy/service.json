@@ -67,31 +67,31 @@
 	"Mappings":{
 	  "AWSRegionToAMI":{
 		"us-east-1":{
-		  "AMIID":"ami-eca289fb"
+		  "AMIID":"ami-28456852"
 		},
 		"us-east-2":{
-		  "AMIID":"ami-446f3521"
+		  "AMIID":"ami-ce1c36ab"
 		},
 		"us-west-1":{
-		  "AMIID":"ami-9fadf8ff"
+		  "AMIID":"ami-74262414"
 		},
 		"us-west-2":{
-		  "AMIID":"ami-7abc111a"
+		  "AMIID":"ami-decc7fa6"
 		},
 		"eu-west-1":{
-		  "AMIID":"ami-a1491ad2"
+		  "AMIID":"ami-1d46df64"
 		},
 		"eu-central-1":{
-		  "AMIID":"ami-54f5303b"
+		  "AMIID":"ami-509a053f"
 		},
 		"ap-northeast-1":{
-		  "AMIID":"ami-9cd57ffd"
+		  "AMIID":"ami-872c4ae1"
 		},
 		"ap-southeast-1":{
-		  "AMIID":"ami-a900a3ca"
+		  "AMIID":"ami-910d72ed"
 		},
 		"ap-southeast-2":{
-		  "AMIID":"ami-5781be34"
+		  "AMIID":"ami-58bb443a"
 		}
 	  }
 	},
