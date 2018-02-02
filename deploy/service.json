@@ -67,7 +67,7 @@
 	"Mappings":{
 	  "AWSRegionToAMI":{
 		"us-east-1":{
-		  "AMIID":"ami-28456852"
+		  "AMIID":"ami-84b6b7fe"
 		},
 		"us-east-2":{
 		  "AMIID":"ami-ce1c36ab"
