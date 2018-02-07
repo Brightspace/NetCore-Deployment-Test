@@ -386,8 +386,8 @@
 		  "DesiredCount":"1",
 		  "LoadBalancers":[
 			{
-			  "ContainerName":"simple-app",
-			  "ContainerPort":"80",
+			  "ContainerName":"hello-ecs-app",
+			  "ContainerPort":"5000",
 			  "TargetGroupArn":{
 				"Ref":"ECSTG"
 			  }
