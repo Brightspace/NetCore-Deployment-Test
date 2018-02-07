@@ -67,7 +67,7 @@
 	"Mappings":{
 	  "AWSRegionToAMI":{
 		"us-east-1":{
-		  "AMIID":"ami-84b6b7fe"
+		  "AMIID":"ami-f3c7cf89"
 		},
 		"us-east-2":{
 		  "AMIID":"ami-ce1c36ab"
@@ -161,7 +161,8 @@
 			]
 		  },
 		  "RetentionInDays":14
-		}
+		}Introduction
+		This tutorial shows you how to configure 
 	  },
 	  "taskdefinition":{
 		"Type":"AWS::ECS::TaskDefinition",
