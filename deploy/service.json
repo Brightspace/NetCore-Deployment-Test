@@ -286,7 +286,7 @@
 		  "HealthCheckTimeoutSeconds":5,
 		  "HealthyThresholdCount":2,
 		  "Name":"ECSTG",
-		  "Port":5000,
+		  "Port":80,
 		  "Protocol":"HTTP",
 		  "UnhealthyThresholdCount":2,
 		  "VpcId":{
