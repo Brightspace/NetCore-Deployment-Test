@@ -161,8 +161,7 @@
 			]
 		  },
 		  "RetentionInDays":14
-		}Introduction
-		This tutorial shows you how to configure 
+		}
 	  },
 	  "taskdefinition":{
 		"Type":"AWS::ECS::TaskDefinition",
