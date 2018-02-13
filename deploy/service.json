@@ -67,7 +67,7 @@
 	"Mappings":{
 	  "AWSRegionToAMI":{
 		"us-east-1":{
-		  "AMIID":"ami-f3c7cf89"
+		  "AMIID":"ami-eca289fb"
 		},
 		"us-east-2":{
 		  "AMIID":"ami-ce1c36ab"
@@ -202,11 +202,6 @@
 				}
 			  ]
 			}
-		  ],
-		  "Volumes":[
-			{
-			  "Name":"my-vol"
-			}
 		  ]
 		}
 	  },
@@ -280,10 +275,10 @@
 		"Type":"AWS::ElasticLoadBalancingV2::TargetGroup",
 		"DependsOn":"ECSALB",
 		"Properties":{
-		  "HealthCheckIntervalSeconds":10,
+		  "HealthCheckIntervalSeconds":25,
 		  "HealthCheckPath":"/",
 		  "HealthCheckProtocol":"HTTP",
-		  "HealthCheckTimeoutSeconds":5,
+		  "HealthCheckTimeoutSeconds":15,
 		  "HealthyThresholdCount":2,
 		  "Name":"ECSTG",
 		  "Port":80,
@@ -359,6 +354,7 @@
 					"Ref":"ECSCluster"
 				  },
 				  " >> /etc/ecs/ecs.config\n",
+				  "yum install -y aws-cfn-bootstrap\n",
 				  "/opt/aws/bin/cfn-signal -e $? ",
 				  "         --stack ",
 				  {
@@ -577,7 +573,15 @@
 					  "ecs:StartTelemetrySession",
 					  "ecs:Submit*",
 					  "logs:CreateLogStream",
-					  "logs:PutLogEvents"
+					  "logs:PutLogEvents",
+					  "ecr:GetAuthorizationToken",
+					  "ecr:BatchCheckLayerAvailability",
+					  "ecr:GetDownloadUrlForLayer",
+					  "ecr:GetRepositoryPolicy",
+					  "ecr:DescribeRepositories",
+					  "ecr:ListImages",
+					  "ecr:DescribeImages",
+					  "ecr:BatchGetImage"
 					],
 					"Resource":"*"
 				  }
